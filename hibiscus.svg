@@ -1,0 +1,93 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 260 260">
+
+  <!-- ONE ILLUSTRATED PETAL -->
+  <defs>
+    <g id="petal">
+
+      <!-- Dark outer silhouette -->
+      <path
+        d="M0 -6
+           C-31 -31 -60 -83 -32 -105
+           C-20 -116 -7 -107 0 -111
+           C22 -121 51 -104 48 -77
+           C46 -48 20 -18 0 -6 Z"
+        fill="#92234D"/>
+
+      <!-- Main rose colour -->
+      <path
+        d="M0 -12
+           C-28 -38 -50 -82 -27 -99
+           C-13 -110 -3 -99 4 -105
+           C26 -112 44 -96 41 -77
+           C39 -48 17 -24 0 -12 Z"
+        fill="#D63870"/>
+
+      <!-- Lighter petal layer -->
+      <path
+        d="M0 -24
+           C-17 -45 -40 -78 -23 -93
+           C-9 -102 2 -91 10 -96
+           C25 -101 37 -88 34 -71
+           C30 -49 13 -31 0 -24 Z"
+        fill="#F172A1"/>
+
+      <!-- Highlight -->
+      <path
+        d="M0 -31
+           C-7 -54 -15 -80 -6 -91
+           C6 -82 17 -86 22 -74
+           C22 -56 10 -39 0 -31 Z"
+        fill="#F8A1BF"/>
+
+      <!-- Petal veins -->
+      <path
+        d="M0 -10 Q-14 -47 -18 -79"
+        fill="none"
+        stroke="#A62555"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+      <path
+        d="M0 -12 Q12 -48 29 -73"
+        fill="none"
+        stroke="#BD3468"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+    </g>
+  </defs>
+
+  <!-- ASSEMBLE THE FLOWER -->
+  <g transform="translate(130 130)">
+
+    <use href="#petal" transform="rotate(0)"/>
+    <use href="#petal" transform="rotate(72)"/>
+    <use href="#petal" transform="rotate(144)"/>
+    <use href="#petal" transform="rotate(216)"/>
+    <use href="#petal" transform="rotate(288)"/>
+
+    <!-- Flower centre -->
+    <circle r="19" fill="#8B2049"/>
+    <circle r="9" fill="#BB3B65"/>
+
+    <!-- Golden stamen -->
+    <path
+      d="M0 0 Q22 -20 41 -60"
+      fill="none"
+      stroke="#F6B94D"
+      stroke-width="5"
+      stroke-linecap="round"/>
+
+    <!-- Pollen -->
+    <g fill="#FFCF65">
+      <circle cx="31" cy="-43" r="4"/>
+      <circle cx="37" cy="-53" r="4"/>
+      <circle cx="42" cy="-61" r="4"/>
+      <circle cx="25" cy="-34" r="4"/>
+      <circle cx="46" cy="-56" r="4"/>
+    </g>
+
+  </g>
+</svg>

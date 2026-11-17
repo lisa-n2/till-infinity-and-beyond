@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Till Infinity And Beyond</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="invitation">
+
+        <p class="subtitle">A special invitation</p>
+
+        <h1>For my favourite explorer...</h1>
+
+        <p class="description">
+            Somewhere beyond the ordinary,
+            a digital garden is waiting.
+        </p>
+
+        <!-- ENVELOPE -->
+
+        <div
+            class="envelope"
+            id="envelope"
+            role="button"
+            tabindex="0"
+            aria-label="Open your invitation"
+            aria-expanded="false"
+        >
+
+            <div class="letter">
+                <p>You've been invited to ♡</p>
+                <small>
+                    A little place where flowers grow endlessly.
+                </small>
+            </div>
+
+            <div class="flap"></div>
+
+            <div class="envelope-front"></div>
+
+            <div class="seal">∞</div>
+
+        </div>
+
+        <button id="openButton">
+            Open me
+        </button>
+
+        <!-- GARDEN MAP -->
+
+        <section class="reveal" id="reveal" aria-hidden="true">
+
+            <h2>Your adventure awaits.</h2>
+
+            <p class="map-intro">
+                A little map to somewhere special...
+            </p>
+
+            <div class="map">
+
+                <div class="map-heading">
+                    <span>✿</span>
+                    <p>YOUR LITTLE GARDEN MAP</p>
+                    <span>✿</span>
+                </div>
+
+                <svg
+                    class="map-route"
+                    viewBox="0 0 300 360"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+
+                    <!-- Winding journey -->
+                    <path
+                        d="M75 35
+                           C240 45, 245 100, 150 125
+                           S65 185, 180 215
+                           S250 280, 130 320"
+                        fill="none"
+                        stroke="#A4A879"
+                        stroke-width="4"
+                        stroke-dasharray="5 9"
+                        stroke-linecap="round"
+                    />
+
+                    <!-- Starting point -->
+                    <circle cx="75" cy="35" r="13"
+                        fill="#F0C7A8"
+                        stroke="#927458"
+                        stroke-width="2"/>
+
+                    <text x="75" y="40"
+                        text-anchor="middle"
+                        font-size="14">✉</text>
+
+                    <!-- Flower meadow -->
+                    <circle cx="150" cy="125" r="18"
+                        fill="#F5D5D9"
+                        stroke="#D77F8E"
+                        stroke-width="2"/>
+
+                    <text x="150" y="131"
+                        text-anchor="middle"
+                        font-size="19">✿</text>
+
+                    <!-- Secret garden -->
+                    <circle cx="180" cy="215" r="18"
+                        fill="#D9E1C7"
+                        stroke="#66845C"
+                        stroke-width="2"/>
+
+                    <text x="180" y="221"
+                        text-anchor="middle"
+                        font-size="19">♧</text>
+
+                    <!-- Infinity destination -->
+                    <circle cx="130" cy="320" r="18"
+                        fill="#F5D5D9"
+                        stroke="#D77F8E"
+                        stroke-width="2"/>
+
+                    <text x="130" y="326"
+                        text-anchor="middle"
+                        font-size="19">∞</text>
+
+                </svg>
+
+                <!-- Map labels -->
+
+                <div class="map-label start-label">
+                    <strong>01. The Invitation</strong>
+                    <small>Where it all begins</small>
+                </div>
+
+                <div class="map-label flower-label">
+                    <strong>02. Flower Meadow</strong>
+                    <small>Where flowers bloom</small>
+                </div>
+
+                <div class="map-label garden-label">
+                    <strong>03. Secret Garden</strong>
+                    <small>A world to explore</small>
+                </div>
+
+                <div class="map-label infinity-label">
+                    <strong>04. Beyond Infinity</strong>
+                    <small>Where it never ends</small>
+                </div>
+
+            </div>
+
+            <p class="map-footer">
+                Follow the flowers... ♡
+            </p>
+            <button id ="enterGarden">
+                Let the journey begin 🧚🏽‍♀️
+            </button>
+
+        </section>
+
+<!-- ==================================
+     THE GARDEN
+================================== -->
+
+<section class="garden" id="garden">
+
+
+    <div class="landscape">
+
+         <div class="garden-heading">
+        <p class="subtitle">A little world of our own</p>
+        <h2>Welcome to the garden ♡</h2>
+        <p>There's a little magic growing here.</p>
+    </div>
+
+    
+
+        <!-- SKY -->
+
+        <div class="sky">
+
+            <div class="sun"></div>
+
+            <div class="cloud cloud-one">
+                ☁
+            </div>
+
+            <div class="cloud cloud-two">
+                ☁
+            </div>
+
+            <div class="cloud cloud-three">
+                ☁
+            </div>
+
+        </div>
+
+        <!-- BACKGROUND HILLS -->
+
+        <div class="hill hill-back"></div>
+        <div class="hill hill-middle"></div>
+        <div class="hill hill-front"></div>
+
+        <!-- TREES -->
+
+        <div class="tree tree-left">♣</div>
+        <div class="tree tree-right">♣</div>
+
+        <!-- GARDEN PATH -->
+
+       <svg class="garden-path"
+     viewBox="0 0 1000 500"
+     preserveAspectRatio="none"
+     aria-hidden="true">
+
+    <path
+        d="M 505 0
+           C 560 70, 650 95, 610 155
+           C 570 210, 420 220, 460 285
+           C 500 350, 650 360, 720 500
+
+           L 270 500
+
+           C 330 390, 360 340, 340 290
+           C 310 220, 510 195, 530 145
+           C 550 100, 490 55, 485 0
+           Z"
+
+        fill="#E9D5AC"
+    />
+
+      </svg>
+
+        <!-- DECORATIVE FLOWERS -->
+
+        <div class="meadow-flower flower-one">✿</div>
+        <div class="meadow-flower flower-two">✿</div>
+        <div class="meadow-flower flower-three">✿</div>
+        <div class="meadow-flower flower-four">✿</div>
+        <div class="meadow-flower flower-five">✿</div>
+
+
+        <!-- MEADOW GRASS -->
+
+<div class="grass grass-one"></div>
+<div class="grass grass-two"></div>
+<div class="grass grass-three"></div>
+<div class="grass grass-four"></div>
+<div class="grass grass-five"></div>
+<div class="grass grass-six"></div>
+
+<!-- BOTANICAL FLOWER COLLECTION -->
+
+<div class="hibiscus garden-flower">
+    <img src="assets/flowers/hibiscus-new.png" alt="Monarch hibiscus">
+</div>
+
+<div class="garden-flower protea">
+    <img src="assets/flowers/protea.png" alt="Protea">
+</div>
+
+<div class="garden-flower bougainvillea">
+    <img src="assets/flowers/bougainvillea.png" alt="Bougainvillea">
+</div>
+
+<div class="garden-flower jasmine">
+    <img src="assets/flowers/jasmine.png" alt="Night-blooming jasmine">
+</div>
+
+<div class="garden-flower tiger-lily">
+    <img src="assets/flowers/tiger-lily.png" alt="Tiger lily">
+</div>
+
+<div class="garden-flower sunflower">
+    <img src="assets/flowers/sunflower.png" alt="Sunflower">
+</div>
+
+<div class="garden-flower orchid">
+    <img src="assets/flowers/orchid.png" alt="Orchid">
+</div>
+
+<div class="garden-flower carnation">
+    <img src="assets/flowers/carnation.png" alt="Carnation">
+</div>
+
+<div class="garden-flower calla-lily">
+    <img src="assets/flowers/calla-lily.png" alt="Calla lily">
+</div>
+
+<div class="garden-flower balloon-flower">
+    <img src="assets/flowers/balloon-flower.png" alt="Balloon flower">
+</div>
+
+<div class="garden-flower venus-flytrap">
+    <img src="assets/flowers/venus-flytrap.png" alt="Venus flytrap">
+</div>
+
+<div class="garden-flower spider-lily">
+    <img src="assets/flowers/spider-lily.png" alt="Spider lily">
+</div>
+
+<!-- FLOWER LOVE NOTE -->
+
+<div class="flower-note" id="flowerNote" aria-hidden="true">
+
+    <div class="note-card" role="dialog"
+         aria-modal="true"
+         aria-labelledby="noteTitle">
+
+        <button class="close-note" id="closeNote"
+                aria-label="Close flower note">×</button>
+
+        <p class="note-label">LOOKS LIKE YOU FOUND SOMETHING</p>
+
+        <h2 id="noteTitle">Miss Hibiscus</h2>
+
+        <p id="noteMessage">
+            A little love is growing here...
+        </p>
+
+        <span class="note-decoration">✿ ♡ ✿</span>
+
+    </div>
+
+</div>
+    <div class="garden-footer">
+        <p>And so, our little adventure begins...</p>
+        <span>∞</span>
+    </div>
+
+</div>
+
+</section>
+
+
+    </main>
+
+    <!-- Connect our JavaScript file -->
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>
