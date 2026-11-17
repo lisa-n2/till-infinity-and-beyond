@@ -1007,3 +1007,13 @@ body:has(.invitation.entered) {
 .garden-flower:hover {
     filter: brightness(1.08) drop-shadow(0 0 8px rgba(255, 247, 230, 0.6));
 }
+
+.garden-heading h2 {
+        font-size: clamp(26px, 7vw, 38px);
+        line-height: 1.2;
+    }
+
+    .garden-heading p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
