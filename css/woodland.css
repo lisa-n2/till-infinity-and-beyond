@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
     min-height: 100svh;
 
-    background-image: url("../assets/woodland.png");
+    background-image: url("woodland.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
