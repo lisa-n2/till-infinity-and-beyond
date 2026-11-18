@@ -564,7 +564,7 @@ button:disabled {
 
     min-height: 100vh;
 
-    background-image: url("garden-background.png");
+    background-image: url("../garden-background.png");
 
     background-size: cover;
 
