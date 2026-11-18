@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #19263d;
+    color: #fff7e6;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.infinity-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.infinity-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #d9c7a0;
+}
+
+h1 {
+    font-size: clamp(34px, 6vw, 60px);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.intro-text {
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #e1d8bf;
+}
+
+.infinity-world {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.infinity-placeholder {
+    min-height: 60vh;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #293c57;
+    border: 2px solid #8b8ca8;
+    border-radius: 24px;
+}
+
+.infinity-symbol {
+    font-size: clamp(90px, 15vw, 180px);
+    color: #e6c5cf;
+    line-height: 1;
+}
+
+.infinity-placeholder p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.final-message {
+    max-width: 600px;
+    margin: 80px auto 50px;
+}
+
+.final-message h2 {
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.final-message p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #e1d8bf;
+}
+
+.signature {
+    display: block;
+    margin-top: 40px;
+    font-size: 21px;
+    font-style: italic;
+    color: #e6c5cf;
+}
+
+.infinity-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 35px 0;
+}
+
+.back-link,
+.restart-link {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-link {
+    background: #d9c7a0;
+    color: #19263d;
+}
+
+.restart-link {
+    background: transparent;
+    color: #fff7e6;
+    border: 1px solid #d9c7a0;
+}
+
+.back-link:hover {
+    background: #fff7e6;
+}
+
+.restart-link:hover {
+    background: #394b69;
+}
+
+@media (max-width: 600px) {
+    .infinity-page {
+        padding: 35px 15px;
+    }
+
+    .final-message {
+        margin-top: 55px;
+    }
+}
